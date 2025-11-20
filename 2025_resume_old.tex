@@ -1,0 +1,224 @@
+%-------------------------
+% "Resume in Latex"
+% Template Author: Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{textcomp}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Donnell Fulwiler} \\ \vspace{1pt}
+    \small 512-966-5734 $|$ \href{mailto:dbfulwiler@gmail.com}{\underline{dbfulwiler@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/donnell-fulwiler}{\underline{linkedin.com/in/donnell-fulwiler}} $|$
+    \href{https://github.com/donnell-f}{\underline{github.com/donnell-f}} $|$
+    \href{https://people.tamu.edu/~donnellfulwiler}{\underline{people.tamu.edu/\texttildelow{}donnellfulwiler}} $|$
+    Austin, TX
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {St. Dominic Savio CHS}{Austin, TX}
+      {High School Diploma, $98.41$ GPA}{Aug. 2019 -- May 2023}
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {B.S. Computer Science, Statistics Minor, $3.93$ GPA, Class of 2027}{Aug. 2023 -- May 2027}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Science Intern (Remote)}{Summer 2025}
+      {Kaizen Action LLC.}{Palo Alto, CA}
+      \resumeItemListStart
+        \resumeItem{Developed several tactical analysis algorithms and ran them on various securities. Many algorithms achieved +10\% ROI.}
+        \resumeItem{Used Pandas and Numpy extensively to analyze gigabytes of data.}
+        \resumeItem{Used Tensorflow to create and train a hidden markov model for time series analysis.}
+        \resumeItem{Used various econometric models such as GARCH, EGARCH, ARMA, and ARIMA to model volatility clustering and trends in certain securities. Certain models achieved 85\% accuracy in certain binary classification tasks.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Aug. 2025 -- Present}
+      {Texas A\&M University}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Currently using CNNs and other image recognition algorithms to rapidly identify patterns and diagnostic information in bacteria.}
+        \resumeItem{Working with a team of 8 as one of two machine learning experts.}
+        \resumeItem{I utilize Python, Tensorflow, and Pandas on a daily basis.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CSCE 120 TA}{Aug. 2025 -- Present}
+      {Texas A\&M University}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Leading a lab of approximately 30 students. I give small lectures, create slides, etc. every week.}
+        \resumeItem{I have helped hundreds of students debug and diagnose their C++ code.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gjallarhorn} $|$ \emph{C\#, MS Forms}}{July 2017}
+          \resumeItemListStart
+            \resumeItem{Developed a Runic transcription algorithm that can translate between 3 different types of Runic alphabets.}
+            \resumeItem{Can transliterate any runic inscription written between 300 AD -- 1000 AD.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Neural Network from Scratch} $|$ \emph{Numpy, Python, tensor calculus}}{Feb. 2021 -- Jan 2022}
+          \resumeItemListStart
+            \resumeItem{Made a neural network from scratch using only self-taught tensor calculus knowledge and the NumPy Python library.}
+            \resumeItem{The neural network had three layers, could recognize sinusoidal patterns in data. Trained using simple gradient descent.}
+            \resumeItem{The neural network achieved 98\% accuracy in its task.}
+            \resumeItem{Wrote a research paper on the project. Got featured in school newsletter and almost published.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Interactive x86 Tutorial} $|$ \emph{Git, Github, React, x86 Assembly, MySQL}}{Sep. 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Me and my friend Niel are currently working on an interactive, online, gamified x86 tutorial.}
+            \resumeItem{Frontend is React based. Version control using Git. User data will be stored in a MySQL database.}
+            \resumeItem{The goal is to make learning x86 assembly engaging, fun, and easy.}
+            \resumeItem{Currently teaching x86 assembly in Intel syntax only.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript, HTML/CSS, R, C\#, Haskell, Bash} \\
+     \textbf{Frameworks}{: React, Node.js, Vite} \\
+     \textbf{Developer Tools}{: Git, VS Code, Visual Studio, IntelliJ, Vim, Neovim, Linux} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Tensorflow, Keras, Pandas, Sqlite, Selenium, Playwright}\\
+     \textbf{Skills}{: Machine Learning, AI, NLP, Regression, Classification, Web Scraping, Data Science}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

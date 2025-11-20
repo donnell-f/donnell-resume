@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (template)
+% Edited for : Donnell Fulwiler
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+% \usepackage[empty]{fullpage}
+\usepackage[margin=0.4in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\large \scshape Donnell Fulwiler} \\ \vspace{1pt}
+    \small
+    512-966-5734 $|$
+    \href{mailto:dbfulwiler@gmail.com}{\underline{dbfulwiler@gmail.com}} $|$
+    \href{https://donnell.info/}{\underline{https://donnell.info}} $|$
+    \href{https://www.linkedin.com/in/donnell-fulwiler/}{\underline{linkedin.com/in/donnell-fulwiler}} $|$
+    \href{https://github.com/donnell-f}{\underline{github.com/donnell-f}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {B.S. Computer Science; Minor in Statistics; GPA: 3.93 / 4.00}{Aug. 2023 -- May 2027}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{2025 -- Present}
+      {Chemical Engineering, Texas A\&M University}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Designing convolutional neural network pipelines in Python (TensorFlow, PyTorch) to recognize subtle morphological patterns in bacterial microscopy images.}
+        \resumeItem{Collaborating with graduate researchers to build reproducible ML workflows, manage large labeled image datasets, and track model performance while adhering to NDA constraints.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Teaching Assistant, CSCE 120}{2025 -- Present}
+      {Texas A\&M University}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Lead weekly C++ programming labs for a section of \textasciitilde40 students and support hundreds of students across the course through office hours and online help.}
+        \resumeItem{Reinforce core CS concepts---control flow, functions, pointers, and basic data structures---through live coding, debugging sessions, and one-on-one mentoring.}
+        \resumeItem{Built and maintained \emph{Gradescope Sleuth}, an internal plagiarism-detection tool that enabled the teaching team to uncover roughly 10x more academic integrity violations per assignment with less manual effort.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Science Intern}{Summer 2025}
+      {Kaizen Action LLC}{Remote}
+      \resumeItemListStart
+        \resumeItem{Engineered and backtested tactical trading algorithms on equities and other securities, with several strategies achieving over 15\% simulated ROI on historical data.}
+        \resumeItem{Processed multi-gigabyte financial time series using Python, pandas, and NumPy to clean, aggregate, and generate engineered features at scale.}
+        \resumeItem{Applied econometric models (ARMA/ARIMA, GARCH, EGARCH) to capture volatility clustering and directional trends, reaching up to 85\% accuracy on selected binary classification tasks.}
+        \resumeItem{Experimented with TensorFlow-based Hidden Markov Models to model regime shifts and improve the robustness of trading signals.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Gradescope Sleuth} $|$ \emph{Python, Selenium, SQLite, Regex, LRU Cache}}{2025}
+      \resumeItemListStart
+        \resumeItem{Automates retrieval of programming assignments from Gradescope using Selenium and consolidates submissions into a local SQLite database for analysis.}
+        \resumeItem{Implements a custom pattern-matching engine with optimized regular expressions and an LRU cache to efficiently surface suspiciously similar code segments.}
+        \resumeItem{Enabled the CSCE 120 teaching team to identify roughly 10x more plagiarism cases per assignment while significantly reducing manual review time.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Personal Web Server} $|$ \emph{React, Node.js, Express.js, Caddy, AWS Lightsail, Appwrite}}{2025}
+      \resumeItemListStart
+        \resumeItem{Host two production web applications on an Amazon Lightsail VPS using Caddy as a reverse proxy with automatic TLS via Let's Encrypt.}
+        \resumeItem{Developed \href{https://donnell.info/}{\underline{donnell.info}} as a static React portfolio site showcasing projects, coursework, and writing.}
+        \resumeItem{Built a secure React-based homework instruction portal for CSCE 120, using Google OAuth via Appwrite and an Express.js backend to gate access to course materials.}
+        \resumeItem{Implemented ``AI traps'' in assignment text that only appear when copied to the clipboard, helping instructors detect LLM-generated work at scale.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{ExSELLence POS} $|$ \emph{React, Node.js, Express.js, PostgreSQL, Google OAuth, Google Translate, OpenWeather}}{2025}
+      \resumeItemListStart
+        \resumeItem{Collaborated with a team of five to design and build a point-of-sale web application targeting small retailers.}
+        \resumeItem{Implemented a responsive React frontend and RESTful Express.js API backed by PostgreSQL to manage transactions, inventory, and customer data.}
+        \resumeItem{Integrated Google OAuth for authentication and used Google Translate and OpenWeather APIs to localize the interface and enhance the checkout experience for diverse users.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python, Java, Haskell, JavaScript, SQL, HTML, CSS} \\
+     \textbf{Frameworks \& Libraries}{: React, Node.js, Express.js, TensorFlow, NumPy, pandas, Selenium} \\
+     \textbf{Databases}{: PostgreSQL, SQLite3} \\
+     \textbf{Tools \& Platforms}{: Git, Linux, Amazon Lightsail, Caddy, Appwrite} \\
+     \textbf{Domains}{: Machine Learning, Time Series Analysis, Econometrics}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
