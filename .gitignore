@@ -1,6 +1,17 @@
+# Ignore helper files
 donnell_fulwiler_resume.aux
 donnell_fulwiler_resume.fdb_latexmk
 donnell_fulwiler_resume.fls
 donnell_fulwiler_resume.log
 donnell_fulwiler_resume.out
 donnell_fulwiler_resume.synctex.gz
+
+# Ignore the test resume
+test.aux
+test.fdb_latexmk
+test.fls
+test.log
+test.out
+test.synctex.gz
+test.pdf
+test.tex
